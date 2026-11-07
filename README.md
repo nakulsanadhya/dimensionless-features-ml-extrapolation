@@ -21,8 +21,9 @@ The data come from a layered finite-volume solver extended from the reference so
 
 - Requirements: Python 3 with numpy, pandas, matplotlib, scikit-learn and Jupyter.
 - The notebook reads the CSVs from this repository's GitHub URL. To read the local `data/` folder instead, set `LOCAL = True` in the Load Data cell.
-- It runs top to bottom in about 3.5 minutes on a laptop CPU. Seeds are fixed, so a rerun gives identical results.
+- It runs top to bottom in about 3.5 minutes on a laptop CPU. Seeds are fixed, so a rerun in the same environment gives identical results.
 - Tested with Python 3.12.7, numpy 1.26.4, pandas 2.2.2, scikit-learn 1.7.1 and matplotlib 3.9.2 (Anaconda).
+- The exact numbers need scikit-learn 1.7.1. Newer versions run without errors, but they assign the grouped cross-validation folds differently and build slightly different random forests, so the cross-validation and random-forest scores shift; the linear and neural-network test scores are unchanged.
 
 ## License
 
