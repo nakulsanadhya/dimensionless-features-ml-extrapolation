@@ -6,13 +6,13 @@ Raw, log-transformed and dimensionless inputs are compared with linear regressio
 - larger absolute scales
 - a fluid-solid coupling beyond its training range
 
-The notebook also covers grouped cross-validation, data leakage, inductive bias and permutation importance.
+The notebook also covers grouped cross-validation, data leakage and inductive bias.
 
 ## Contents
 
 | Path | What |
 |---|---|
-| `dimensionless_extrapolation.ipynb` | the notebook |
+| `DimensionlessExtrapolation_Nakul_Sanadhya.ipynb` | the notebook |
 | `data/train.csv`, `test.csv`, `ood_scale.csv`, `ood_coupling.csv` | 2,000 / 300 / 300 / 300 simulations, one row each: `sim_id`, 10 inputs (`H_m`, `sigma0_Pa`, `M_Pa`, `alpha`, `k1_m2`-`k3_m2`, `Mc1_Pa`-`Mc3_Pa`), 41 output times `t_00`-`t_40` [s] and settlements `s_00`-`s_40` [m] |
 
 The data come from a layered finite-volume solver extended from the reference solver in [poroConsolidationFoam](https://github.com/nakulsanadhya/poroConsolidationFoam), which is verified against the exact Terzaghi solution.
